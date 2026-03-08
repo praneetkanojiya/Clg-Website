@@ -61,7 +61,14 @@ export default function Contact() {
                     {/* Contact Form */}
                     <div>
                         <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
-                        <form action={`https://formspree.io/f/${contact.email}`} method="POST" className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 space-y-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 space-y-6">
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+                            {/* Optional: Add a subject to the email */}
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Website" />
+                            {/* Optional: Add a redirect URL after submission
+                               <input type="hidden" name="redirect" value="https://latelkcollege.liveblog365.com/success" /> 
+                            */}
+
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                                 <input type="text" name="name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required />
