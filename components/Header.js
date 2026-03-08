@@ -18,11 +18,11 @@ export default function Header() {
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
             {/* Top Bar */}
-            <div className="bg-primary text-white text-sm py-2">
-                <div className="container-custom flex justify-between items-center">
-                    <div className="flex items-center space-x-4">
+            <div className="bg-primary text-white text-xs sm:text-sm py-2">
+                <div className="container-custom flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+                    <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
                         <span>&#9993; {contentData.contact.email}</span>
-                        <span className="hidden sm:inline">&#9742; {contentData.contact.phone}</span>
+                        <span>&#9742; {contentData.contact.phone}</span>
                     </div>
                     <div className="flex space-x-3">
                         <a href="#" className="hover:text-secondary transition-colors">Facebook</a>
@@ -36,8 +36,8 @@ export default function Header() {
             <nav className="container-custom py-4">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-3">
-                        <div className="w-12 h-12 relative overflow-hidden rounded-full border-2 border-primary">
+                    <Link href="/" className="flex items-center space-x-2 sm:space-x-3 w-[80%] sm:w-auto">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 relative overflow-hidden rounded-full border-2 border-primary shrink-0">
                             <Image
                                 src="http://latelkcollege.liveblog365.com/wp-content/uploads/2025/05/Navy-Gold-Modern-Circle-Class-Logo-150x150.png"
                                 alt="Late Laxmilal Kanojiya Junior College Logo"
@@ -45,10 +45,11 @@ export default function Header() {
                                 className="object-cover"
                             />
                         </div>
-                        <div>
-                            <h1 className="text-xl md:text-2xl font-bold text-primary leading-tight">
-                                Late Laxmilal Kanojiya<br />
-                                <span className="text-secondary text-sm md:text-base font-semibold">Junior College</span>
+                        <div className="flex-1 min-w-0 flex flex-col justify-center">
+                            <h1 className="text-sm sm:text-xl md:text-2xl font-bold text-primary leading-tight truncate">
+                                Late Laxmilal Kanojiya<br className="hidden sm:block" />
+                                <span className="sm:hidden"> </span>
+                                <span className="text-secondary text-xs sm:text-sm md:text-base font-semibold">Junior College</span>
                             </h1>
                         </div>
                     </Link>
