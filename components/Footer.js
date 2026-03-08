@@ -33,11 +33,11 @@ export default function Footer() {
                         </li>
                         <li className="flex items-start">
                             <span className="mr-2">&#9742;</span>
-                            <span>{contentData.contact.phone}</span>
+                            <a href={`tel:${contentData.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-white transition-colors">{contentData.contact.phone}</a>
                         </li>
                         <li className="flex items-start">
                             <span className="mr-2">&#9993;</span>
-                            <span>{contentData.contact.email}</span>
+                            <a href={`mailto:${contentData.contact.email}`} className="hover:text-white transition-colors">{contentData.contact.email}</a>
                         </li>
                     </ul>
                 </div>

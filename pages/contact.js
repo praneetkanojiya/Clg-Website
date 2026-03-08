@@ -35,7 +35,7 @@ export default function Contact() {
                                 <div className="bg-white p-3 rounded-full text-secondary text-xl mr-4 shadow-sm">&#9742;</div>
                                 <div>
                                     <h3 className="font-bold text-gray-800 text-lg">Phone</h3>
-                                    <p className="text-gray-600 mt-1">{contact.phone}</p>
+                                    <a href={`tel:${contact.phone.replace(/[^0-9+]/g, '')}`} className="text-primary hover:text-secondary mt-1 block transition-colors">{contact.phone}</a>
                                 </div>
                             </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
                                 <div className="bg-white p-3 rounded-full text-secondary text-xl mr-4 shadow-sm">&#9993;</div>
                                 <div>
                                     <h3 className="font-bold text-gray-800 text-lg">Email</h3>
-                                    <p className="text-gray-600 mt-1">{contact.email}</p>
+                                    <a href={`mailto:${contact.email}`} className="text-primary hover:text-secondary mt-1 block transition-colors">{contact.email}</a>
                                 </div>
                             </div>
 

@@ -21,8 +21,8 @@ export default function Header() {
             <div className="bg-primary text-white text-xs sm:text-sm py-2">
                 <div className="container-custom flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
                     <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
-                        <span>&#9993; {contentData.contact.email}</span>
-                        <span>&#9742; {contentData.contact.phone}</span>
+                        <a href={`mailto:${contentData.contact.email}`} className="hover:text-secondary transition-colors">&#9993; {contentData.contact.email}</a>
+                        <a href={`tel:${contentData.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-secondary transition-colors">&#9742; {contentData.contact.phone}</a>
                     </div>
                     <div className="flex space-x-3">
                         <a href="#" className="hover:text-secondary transition-colors">Facebook</a>
