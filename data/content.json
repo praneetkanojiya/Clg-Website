@@ -29,18 +29,90 @@
     "courses": [
         {
             "id": "science",
-            "name": "Science",
-            "description": "Comprehensive curriculum covering Physics, Chemistry, Biology, and Mathematics."
+            "name": "Science Faculty",
+            "description": "A comprehensive scientific curriculum preparing students for engineering, medical, and pure science careers.",
+            "tracks": [
+                {
+                    "name": "General Science",
+                    "subjects": [
+                        "English (First Language)",
+                        "Second Language (Choice of Hindi, Marathi, Sanskrit, or IT)",
+                        "Elective (Mathematics, Economics, Psychology, or Sociology)",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Health and Physical Education (Compulsory Graded)",
+                        "Environmental Science (Compulsory Graded)"
+                    ]
+                },
+                {
+                    "name": "Bifocal (Electronics / Computer Science / Fisheries)",
+                    "subjects": [
+                        "English (First Language)",
+                        "Vocational Subject (Electronics, Computer Science, or Fresh Water Fisheries)",
+                        "Mathematics",
+                        "Physics",
+                        "Chemistry",
+                        "Health and Physical Education (Compulsory Graded)",
+                        "Environmental Science (Compulsory Graded)"
+                    ]
+                }
+            ]
         },
         {
             "id": "commerce",
-            "name": "Commerce",
-            "description": "Foundational courses in Accountancy, Economics, Business Studies, and Mathematics."
+            "name": "Commerce Faculty",
+            "description": "Foundational business, finance, and accounting education for future entrepreneurs and corporate professionals.",
+            "tracks": [
+                {
+                    "name": "General Commerce",
+                    "subjects": [
+                        "English (First Language)",
+                        "Second Language (Choice of Hindi, Marathi, Sanskrit, or IT)",
+                        "Book Keeping and Accountancy",
+                        "Economics",
+                        "Secretarial Practice",
+                        "Organisation of Commerce and Management OR Mathematics",
+                        "Health and Physical Education (Compulsory Graded)",
+                        "Environmental Science (Compulsory Graded)"
+                    ]
+                }
+            ]
         },
         {
             "id": "arts",
-            "name": "Arts",
-            "description": "In-depth studies in Humanities, Sociology, History, and Political Science."
+            "name": "Arts Faculty",
+            "description": "A highly flexible humanities curriculum fostering critical thinking and cultural understanding.",
+            "tracks": [
+                {
+                    "name": "General Arts",
+                    "subjects": [
+                        "English (First Language)",
+                        "Second Language (Choice of Hindi, Marathi, Sanskrit, or IT)",
+                        "Electives (Choose 4: Sociology, Psychology, History, Political Science, Logic, Philosophy, Economics, Mathematics)",
+                        "Health and Physical Education (Compulsory Graded)",
+                        "Environmental Science (Compulsory Graded)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "vocational",
+            "name": "H.S.C. Vocational Faculty",
+            "description": "Skill-based technical training providing pathways to immediate employment or specialized higher education.",
+            "tracks": [
+                {
+                    "name": "Vocational Stream",
+                    "subjects": [
+                        "English (First Language)",
+                        "Second Language (Choice of Hindi, Marathi, Sanskrit, or IT)",
+                        "General Foundation Course",
+                        "Vocational Subject (Electronics Technology or Fisheries Technology)",
+                        "Health and Physical Education (Compulsory Graded)",
+                        "Environmental Science (Compulsory Graded)"
+                    ]
+                }
+            ]
         }
     ]
 }
