@@ -62,7 +62,7 @@ export default function Contact() {
                     <div>
                         <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
                         <form action="https://api.web3forms.com/submit" method="POST" className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 space-y-6">
-                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+                            <input type="hidden" name="access_key" value="2906f8ef-1350-465e-b1e7-1f94838784c8" />
                             {/* Optional: Add a subject to the email */}
                             <input type="hidden" name="subject" value="New Contact Form Submission from Website" />
                             {/* Optional: Add a redirect URL after submission

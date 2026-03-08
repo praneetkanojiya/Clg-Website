@@ -20,7 +20,7 @@ export default function Admission() {
                     <h2 className="text-2xl font-bold text-primary mb-6 border-b pb-4">Admission Inquiry Form</h2>
 
                     <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
-                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+                        <input type="hidden" name="access_key" value="2906f8ef-1350-465e-b1e7-1f94838784c8" />
                         <input type="hidden" name="subject" value="New Admission Inquiry from Website!" />
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
