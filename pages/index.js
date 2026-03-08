@@ -83,7 +83,13 @@ export default function Home() {
                         {notices.slice(0, 2).map((notice) => (
                             <div key={notice.id} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <span className="text-sm font-semibold text-secondary mb-2 block">{new Date(notice.date).toLocaleDateString()}</span>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">{notice.title}</h3>
+                                {notice.link ? (
+                                    <Link href={notice.link}>
+                                        <h3 className="text-xl font-bold text-primary hover:text-secondary mb-2 cursor-pointer transition-colors">{notice.title}</h3>
+                                    </Link>
+                                ) : (
+                                    <h3 className="text-xl font-bold text-gray-800 mb-2">{notice.title}</h3>
+                                )}
                                 <p className="text-gray-600 mb-4">{notice.content}</p>
                             </div>
                         ))}

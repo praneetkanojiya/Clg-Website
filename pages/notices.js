@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import contentData from '../data/content.json';
 
 export default function Notices() {
@@ -25,7 +26,13 @@ export default function Notices() {
                             sortedNotices.map((notice) => (
                                 <div key={notice.id} className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-secondary hover:shadow-md transition-shadow">
                                     <div className="flex justify-between items-start mb-2">
-                                        <h2 className="text-xl font-bold text-primary">{notice.title}</h2>
+                                        {notice.link ? (
+                                            <Link href={notice.link}>
+                                                <h2 className="text-xl font-bold text-primary hover:text-secondary cursor-pointer transition-colors">{notice.title}</h2>
+                                            </Link>
+                                        ) : (
+                                            <h2 className="text-xl font-bold text-primary">{notice.title}</h2>
+                                        )}
                                         <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap ml-4">
                                             {new Date(notice.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                                         </span>
