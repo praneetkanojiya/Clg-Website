@@ -1,0 +1,45 @@
+{
+    "collegeName": "Late Laxmilal Kanojiya Junior College",
+    "organization": "Bahuuddeshiya Shikshan Sanstha",
+    "contact": {
+        "email": "praneetkanojiya26@gmail.com",
+        "phone": "+91 (123) 456-7890",
+        "address": "123 College Road, City Name, State, 123456"
+    },
+    "home": {
+        "heroTitle": "Welcome to Late Laxmilal Kanojiya Junior College",
+        "heroSubtitle": "Empowering students through quality education and holistic development for a brighter future.",
+        "aboutSnippet": "We provide a supportive and innovative environment aiming to shape the leaders of tomorrow."
+    },
+    "notices": [
+        {
+            "id": 1,
+            "date": "2026-03-08",
+            "title": "Admissions Open for 2026-27",
+            "content": "Admissions are now open for the upcoming academic year. Apply online or visit the campus."
+        },
+        {
+            "id": 2,
+            "date": "2026-03-01",
+            "title": "Upcoming Semester Exams",
+            "content": "Semester exams will commence from the end of the month. Check the detailed timetable on the notice board."
+        }
+    ],
+    "courses": [
+        {
+            "id": "science",
+            "name": "Science",
+            "description": "Comprehensive curriculum covering Physics, Chemistry, Biology, and Mathematics."
+        },
+        {
+            "id": "commerce",
+            "name": "Commerce",
+            "description": "Foundational courses in Accountancy, Economics, Business Studies, and Mathematics."
+        },
+        {
+            "id": "arts",
+            "name": "Arts",
+            "description": "In-depth studies in Humanities, Sociology, History, and Political Science."
+        }
+    ]
+}
