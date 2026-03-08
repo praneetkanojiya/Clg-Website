@@ -61,25 +61,25 @@ export default function Contact() {
                     {/* Contact Form */}
                     <div>
                         <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
-                        <form className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 space-y-6">
+                        <form action={`https://formspree.io/f/${contact.email}`} method="POST" className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 space-y-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                                <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required />
+                                <input type="text" name="name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required />
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                                <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email" required />
+                                <input type="email" name="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email" required />
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                                <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="How can we help?" required />
+                                <input type="text" name="subject" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="How can we help?" required />
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                                <textarea rows={5} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your message here..." required></textarea>
+                                <textarea rows={5} name="message" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Enter your message here..." required></textarea>
                             </div>
 
                             <button type="submit" className="w-full btn-primary py-3 text-lg mt-4">

@@ -19,47 +19,48 @@ export default function Admission() {
                 <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h2 className="text-2xl font-bold text-primary mb-6 border-b pb-4">Admission Inquiry Form</h2>
 
-                    <form className="space-y-6">
+                    <form action={`https://formspree.io/f/${contentData.contact.email}`} method="POST" className="space-y-6">
+                        <input type="hidden" name="_subject" value="New Admission Inquiry!" />
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
-                                <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="John" required />
+                                <input type="text" name="First_Name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="John" required />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
-                                <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Doe" required />
+                                <input type="text" name="Last_Name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Doe" required />
                             </div>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                                <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="john@example.com" required />
+                                <input type="email" name="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="john@example.com" required />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
-                                <input type="tel" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="+91 XXXXXXXXXX" required />
+                                <input type="tel" name="Phone_Number" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="+91 XXXXXXXXXX" required />
                             </div>
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Interested Stream *</label>
-                            <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" required>
+                            <select name="Interested_Stream" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" required>
                                 <option value="">Select a Stream</option>
                                 {contentData.courses.map((course) => (
-                                    <option key={course.id} value={course.id}>{course.name}</option>
+                                    <option key={course.id} value={course.name}>{course.name}</option>
                                 ))}
                             </select>
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Previous School/College</label>
-                            <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Name of institution" />
+                            <input type="text" name="Previous_School" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Name of institution" />
                         </div>
 
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Additional Message or Query</label>
-                            <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Your message here..."></textarea>
+                            <textarea rows={4} name="Message" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Your message here..."></textarea>
                         </div>
 
                         <div>
