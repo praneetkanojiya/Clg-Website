@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import contentData from '../data/content.json';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,8 @@ export default function Header() {
             <div className="bg-primary text-white text-sm py-2">
                 <div className="container-custom flex justify-between items-center">
                     <div className="flex items-center space-x-4">
-                        <span>&#9993; admissions@latelkcollege.com</span>
-                        <span className="hidden sm:inline">&#9742; +91 (123) 456-7890</span>
+                        <span>&#9993; {contentData.contact.email}</span>
+                        <span className="hidden sm:inline">&#9742; {contentData.contact.phone}</span>
                     </div>
                     <div className="flex space-x-3">
                         <a href="#" className="hover:text-secondary transition-colors">Facebook</a>

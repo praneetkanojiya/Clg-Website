@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import contentData from '../data/content.json';
 
 export default function Footer() {
     return (
@@ -28,15 +29,15 @@ export default function Footer() {
                     <ul className="space-y-3 text-gray-300 text-sm list-none">
                         <li className="flex items-start">
                             <span className="mr-2">&#128205;</span>
-                            <span>123 College Road, City Name, State, 123456</span>
+                            <span>{contentData.contact.address}</span>
                         </li>
                         <li className="flex items-start">
                             <span className="mr-2">&#9742;</span>
-                            <span>+91 (123) 456-7890</span>
+                            <span>{contentData.contact.phone}</span>
                         </li>
                         <li className="flex items-start">
                             <span className="mr-2">&#9993;</span>
-                            <span>admissions@latelkcollege.com</span>
+                            <span>{contentData.contact.email}</span>
                         </li>
                     </ul>
                 </div>
