@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import contentData from '../data/content.json';
+import DigitalMedia from '../components/DigitalMedia';
 
 export default function Home() {
     const { home, notices } = contentData;
@@ -72,6 +73,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Digital Media Gallery (Brochure & Pamphlet) */}
+            <DigitalMedia />
 
             {/* Latest Notices Section */}
             <section className="py-16 bg-gray-50">
