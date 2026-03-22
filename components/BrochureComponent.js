@@ -37,25 +37,31 @@ const BrochureComponent = () => {
                 >
                     {/* Page 1: Cover */}
                     <Page number={1}>
-                        <div className="h-full flex flex-col text-white rounded-lg p-6 relative overflow-hidden bg-gradient-to-b from-blue-600 to-blue-800">
+                        <div className="h-full flex flex-col text-white rounded-lg p-6 relative overflow-hidden bg-gradient-to-b from-blue-600 to-blue-800 uppercase tracking-tight">
                             <div className="text-center mb-4">
                                 <p className="text-[10px] font-semibold uppercase tracking-wider">Shree Sadguru Gajanan Bahuuddheshiya Sanstha's</p>
                                 <p className="text-[10px]">(Government Approved)</p>
                             </div>
                             
                             <div className="flex justify-center mb-6">
-                                <div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm border border-white/30">
-                                    <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2">
-                                        {/* Simplified Logo Placeholder */}
-                                        <div className="text-blue-800 font-bold text-xs text-center leading-none">L.K.<br/>Junior<br/>College</div>
+                                <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm border border-white/30">
+                                    <div className="w-16 h-16 relative overflow-hidden rounded-full border-2 border-white bg-white">
+                                        <Image
+                                            src="http://latelkcollege.liveblog365.com/wp-content/uploads/2025/05/Navy-Gold-Modern-Circle-Class-Logo-150x150.png"
+                                            alt="Logo"
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
                                 </div>
                             </div>
 
-                            <h1 className="text-3xl font-black text-center mb-2 leading-tight drop-shadow-lg">LAXMILAL KANOJIYA</h1>
-                            <h2 className="text-xl font-bold text-center mb-6 text-blue-100">Arts, Commerce & Science Jr. College <br/> <span className="text-white italic text-lg font-normal">Chankapur</span></h2>
+                            <h1 className="text-3xl font-black text-center mb-2 leading-tight drop-shadow-lg uppercase">LAXMILAL KANOJIYA</h1>
+                            <h2 className="text-sm font-bold text-center mb-6 text-blue-100 uppercase tracking-widest leading-none">
+                                Arts, Commerce & Science <br/> Junior College <br/> <span className="text-white italic text-md font-normal lowercase mt-1 block">Chankapur</span>
+                            </h2>
 
-                            <div className="space-y-3 mb-8 bg-white/10 p-4 rounded-lg backdrop-blur-xs border border-white/10">
+                            <div className="space-y-3 mb-8 bg-white/10 p-4 rounded-lg backdrop-blur-xs border border-white/10 normal-case">
                                 <div className="flex justify-between items-center border-b border-white/20 pb-2">
                                     <span className="font-bold">Arts</span>
                                     <span className="text-sm">- English Medium</span>

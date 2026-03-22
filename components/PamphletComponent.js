@@ -54,9 +54,9 @@ const PamphletComponent = () => {
                     {/* Page 1: Front - 100% Results & Top Rankers */}
                     <Page number={1}>
                         <div className="h-full flex flex-col">
-                            <div className="text-center mb-4 bg-blue-900 text-white p-3 rounded-lg">
+                            <div className="text-center mb-4 bg-blue-900 text-white p-3 rounded-lg uppercase">
                                 <p className="text-[10px] uppercase font-bold tracking-widest opacity-80 mb-1">Shree Sadguru Gajanan Bahuuddheshiya Sanstha's</p>
-                                <h3 className="text-xl font-black leading-tight tracking-tighter">LAXMILAL KANOJIYA</h3>
+                                <h3 className="text-xl font-black leading-tight tracking-tighter uppercase">LAXMILAL KANOJIYA</h3>
                                 <p className="text-xs font-bold uppercase text-blue-200">Commerce & Science Jr. College</p>
                             </div>
 
